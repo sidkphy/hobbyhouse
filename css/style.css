@@ -188,6 +188,25 @@ p {
 }
 
 /* ==========================================================================
+   Site banner (shared across every page)
+   ========================================================================== */
+
+.site-banner {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.site-banner img {
+  width: 100%;
+  height: clamp(90px, 18vw, 220px);
+  object-fit: cover;
+  object-position: center 42%;
+  display: block;
+}
+
+/* ==========================================================================
    Hero
    ========================================================================== */
 

@@ -6,16 +6,17 @@ preview it locally, or push the whole folder to GitHub Pages.
 
 ## Pages included
 
-| Page                  | File                  | Notes                                             |
-|------------------------|------------------------|----------------------------------------------------|
-| Home                   | `index.html`           | Short description + links to all 4 menus           |
-| Customised T-Shirts     | `tshirts.html`         | 6 placeholder items in a grid                       |
-| Doll's Fashion         | `dolls-fashion.html`   | 6 placeholder items in a grid                       |
-| Art Collection         | `art-collection.html`  | 6 placeholder items in a grid                       |
-| Tailor Training        | `tailor-training.html` | Course description placeholder, tagged Coming Soon  |
-| Item details (generic) | `item-details.html`    | Linked from every item card; has the Buy Now button |
-| Coming soon + feedback | `coming-soon.html`     | Reached from every Buy Now / Get Notified button    |
+| Page                    | File                        | Notes                                                |
+|-------------------------|------------------------------|-------------------------------------------------------|
+| Home                    | `index.html`                 | Intro text + links to all 4 menus                      |
+| Customised T-Shirts     | `tshirts.html`                | 6 real items, ₹1000 each                               |
+| Doll's Fashion          | `dolls-fashion.html`          | 6 real items, ₹2000 each                               |
+| Art Collection          | `art-collection.html`         | 6 real items, ₹1000 each                               |
+| Tailor Training         | `tailor-training.html`        | Short intro, tagged Coming Soon                        |
+| Item details (18 pages) | `item-<slug>.html`            | One page per item, e.g. `item-tshirt-1.html`           |
+| Coming soon + feedback  | `coming-soon.html`            | Reached from every Buy Now / Get Notified button       |
 
+Product photos live in `images/` (18 files, ~100–250KB each JPGs).
 Shared styles are in `css/style.css`, shared mobile-menu script in `js/main.js`.
 
 ## Publishing with GitHub Pages
@@ -36,16 +37,17 @@ Once you buy a custom domain, add it under the same Settings → Pages
 screen ("Custom domain") and point the domain's DNS at GitHub's servers —
 GitHub shows the exact records to add once you enter the domain.
 
-## Filling in content later
+## Editing content
 
-- Replace the placeholder text in `[]` (descriptions, item names, prices)
-  directly in each HTML file.
-- Replace the `placehold.co` image URLs with real photos — just swap the
-  `src="..."` on each `<img>` tag for your own image file or link.
-- Each item currently links to the same `item-details.html`. Once you have
-  real products, the simplest option is to duplicate that file per item
-  (e.g. `item-details-1.html`, `item-details-2.html`) and update the
-  "View Details" links on the category pages to match.
+- To change an item's name, price or description, open its `item-<slug>.html`
+  page directly (e.g. `item-tshirt-1.html`) and edit the text — then also
+  update the matching card on the category listing page (`tshirts.html`,
+  `dolls-fashion.html` or `art-collection.html`) so the name/price stay in sync.
+- To add a new item, copy an existing `item-<slug>.html` file, give it a new
+  filename, swap in a new image from `images/`, and add a matching card to
+  the category listing page.
+- To swap a photo, drop a new file into `images/` and update the `src="images/..."`
+  reference on both the listing card and that item's detail page.
 
 ## Turning the feedback form into something that actually sends
 

@@ -10,13 +10,13 @@ preview it locally, or push the whole folder to GitHub Pages.
 |-------------------------|------------------------------|-------------------------------------------------------|
 | Home                    | `index.html`                 | Intro text + links to all 4 menus                      |
 | Customised T-Shirts     | `tshirts.html`                | 6 real items, ₹1000 each                               |
-| Doll's Fashion          | `dolls-fashion.html`          | 6 real items, ₹2000 each                               |
+| Doll's Fashion          | `dolls-fashion.html`          | 9 real items, ₹2000 each                               |
 | Art Collection          | `art-collection.html`         | 6 real items, ₹1000 each                               |
 | Tailor Training         | `tailor-training.html`        | Short intro, tagged Coming Soon                        |
-| Item details (18 pages) | `item-<slug>.html`            | One page per item, e.g. `item-tshirt-1.html`           |
+| Item details (21 pages) | `item-<slug>.html`            | One page per item, e.g. `item-tshirt-1.html`           |
 | Coming soon + feedback  | `coming-soon.html`            | Reached from every Buy Now / Get Notified button       |
 
-Product photos live in `images/` (18 files, ~100–250KB each JPGs).
+Product photos live in `images/` (21 item photos + 1 shared banner, ~100–300KB each JPGs).
 Shared styles are in `css/style.css`, shared mobile-menu script in `js/main.js`.
 
 ## Publishing with GitHub Pages
